@@ -1,22 +1,22 @@
-const collatz = (num) => {
-  let steps = 0
+// const collatz = (num) => {
+//   let steps = 0
 
-  while (num > 0) {
-    if (num === 1) {
-      break
-    }
-    if (num % 2 === 0) {
-      num /=2
-      steps++
-    } else {
-      num *= 3
-      num++
-      steps++
-    }
+//   while (num > 0) {
+//     if (num === 1) {
+//       break
+//     }
+//     if (num % 2 === 0) {
+//       num /=2
+//       steps++
+//     } else {
+//       num *= 3
+//       num++
+//       steps++
+//     }
 
-  }
-  return steps
-}
+//   }
+//   return steps
+// }
 
 const collatz = (num, steps=0) => {
   if (num === 1) return steps
